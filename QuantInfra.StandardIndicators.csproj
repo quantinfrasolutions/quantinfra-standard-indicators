@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>10</LangVersion>
+        <Nullable>enable</Nullable>
+        <Title>QuantInfra.StandardIndicators</Title>
+        <Authors>QuantInfra Solutions</Authors>
+        <Description>Implementation of technical indicators for the QuantInfra algorithmic trading platform</Description>
+        <PackageProjectUrl>https://www.quantinfra.solutions/</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/quantinfrasolutions/quantinfra-standard-indicators?tab=Apache-2.0-1-ov-file#readme</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/quantinfrasolutions/quantinfra-standard-indicators</RepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(UseLocalSdkReference)' == 'true'">
+        <ProjectReference Include="..\quantinfra-sdk\QuantInfra.Sdk.MarketData.Abstractions\QuantInfra.Sdk.MarketData.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(UseLocalSdkReference)' != 'true'">
+        <PackageReference Include="QuantInfra.Sdk" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>
