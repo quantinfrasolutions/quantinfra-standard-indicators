@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>QuantInfra.Sdk.StandardIndicators</id>
+        <title>QuantInfra.Sdk.StandardIndicators</title>
+        <version>$version$</version>
+        <authors>QuantInfra Solutions, Inc.</authors>
+        <description>Implementation of standard technical indicators for the QuantInfra trading platform.</description>
+        <projectUrl>https://www.quantinfra.solutions/</projectUrl>
+        <license type="expression">Apache-2.0</license>
+        <copyright>Copyright © 2019-2026 QuantInfra Solutions, Inc.</copyright>
+        <tags>trading trading-platform algorithmic-trading-engine crypto-trading equity-trading futures-trading technical-analysis</tags>
+        <repository>https://github.com/quantinfrasolutions/quantinfra-standard-indicators</repository>
+        <dependencies>
+            <group targetFramework="netstandard2.1">
+                <dependency id="QuantInfra.Sdk" version="0.9.0-beta4" />
+            </group>
+        </dependencies>
+    </metadata>
+
+    <files>
+        <file src="bin/Release/netstandard2.1/QuantInfra.StandardIndicators.dll" target="lib/netstandard2.1/" />
+    </files>
+</package>
