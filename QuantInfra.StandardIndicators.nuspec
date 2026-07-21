@@ -13,7 +13,7 @@
         <repository>https://github.com/quantinfrasolutions/quantinfra-standard-indicators</repository>
         <dependencies>
             <group targetFramework="netstandard2.1">
-                <dependency id="QuantInfra.Sdk" version="0.9.2-beta1" />
+                <dependency id="QuantInfra.Sdk" version="0.9.3-beta1" />
             </group>
         </dependencies>
     </metadata>
